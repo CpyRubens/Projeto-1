@@ -1,9 +1,9 @@
 # Projeto-1
  
-# install dependencies
+### instalar dependencias
 npm install
 
-# serve at localhost:3000
+### serve at localhost:3000
 npm start
 
 
@@ -16,4 +16,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 
-Mozila Public License
+### Mozilla Public License Version 2.0
