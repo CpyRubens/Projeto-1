@@ -1,7 +1,7 @@
 const ItemContext = {
     itemEndpoint: () => `${Api.baseUrl}/to-do-list`,
     itemLista: () => `${ItemContext.itemEndpoint()}/all-itens`,
-    itemById: (id) => `${ItemContext.itemEndpoint()}/one-item/${id}`,
+    itemById: (id) => `${ItemContext.itemEndpoint()}/item/${id}`,
     createItem: () => `${ItemContext.itemEndpoint()}/create-item`,
     updateItemById: (id) => `${ItemContext.itemEndpoint()}/update-item/${id}`,
     deleteItemById: (id) => `${ItemContext.itemEndpoint()}/delete-item/${id}`,

@@ -14,8 +14,11 @@ export const ItemService = {
     }
   }).then(parseResponse),
 
-  updateById: (id) =>
-    fetch(Api.updateItemById(id), { method: "PUT" }).then(parseResponse),
+  updtateById: (id, item) => fetch(Api.updateItemById(id), {
+    method: "PUT", body: JSON.stringify(item), mode: "cors", headers: {
+      "Content-Type": "application/json",
+    }
+  }).then(parseResponse),
   deleteById: (id) =>
     fetch(Api.deleteItemById(id), { method: "DELETE" }).then(parseResponse),
 };

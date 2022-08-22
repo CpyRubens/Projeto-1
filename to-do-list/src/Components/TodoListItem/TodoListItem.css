@@ -1,8 +1,8 @@
 .TodoListItem{
     border: 2px solid black;
     margin: 1rem auto;
-    display: inline-block;
     padding: 0 auto;
+    display: inline-block;
     width: 100%;
     background-color: rgb(219, 219, 219);
     box-shadow: 5px 5px 5px black;
@@ -13,4 +13,10 @@
 .TodoListItem:hover{
     background-color: rgb(212, 208, 208);
     transform: scale(1.01);
+}
+
+.TodoListItem__acoes{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
