@@ -6,7 +6,7 @@ Execute 'npm install'
 ## Server de desenvolvimento em localhost:3000
 Execute 'npm start'
 
-##Criação de build do projeto:
+## Criação de build do projeto:
 Execute 'npm run build'
 
 ## 🛠 Tecnologias
