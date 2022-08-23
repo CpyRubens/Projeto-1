@@ -1,4 +1,5 @@
 # Projeto-1
+Projeto baseado no client da 'El-Geladon' da BlueEdtech
  
 ## Instalar dependencias
 Execute 'npm install'
