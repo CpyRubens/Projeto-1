@@ -1,10 +1,13 @@
 # Projeto-1
  
 ## Instalar dependencias
-npm install
+Execute 'npm install'
 
-## Serve at localhost:3000
-npm start
+## Server de desenvolvimento em localhost:3000
+Execute 'npm start'
+
+##Criação de build do projeto:
+Execute 'npm run build'
 
 ## 🛠 Tecnologias
 
