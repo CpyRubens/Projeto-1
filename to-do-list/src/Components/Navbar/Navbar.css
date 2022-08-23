@@ -102,18 +102,19 @@
 .Item {
   background: none;
   border: none;
-  transform: translateY(-3px);
+ 
   border-radius: 10px;
   transition: all .5s;
   padding: 0;
 }
 
 .Item__icone {
-  padding-right: 1rem;
+  padding-right: .1rem;
+  margin:.2rem;
   cursor: pointer;
   transform: translateY(3px);
 }
 
-.Item--ativa {
-  background: rgba(148, 0, 211);
+.Item--ativo {
+  background: rgb(0, 130, 211);
 }

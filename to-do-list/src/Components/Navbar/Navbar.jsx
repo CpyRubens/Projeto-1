@@ -17,7 +17,7 @@ export default function Navbar({ createItem, updateItem, mode }) {
           <button
             type="button"
             className={`Opcoes__item Item ${
-              mode === ActionMode.ATUALIZAR && "Item--ativa"
+              mode === ActionMode.ATUALIZAR && "Item--ativo"
             }`}
             onClick={() => updateItem()}
           >

@@ -4,16 +4,13 @@ import atualizar from "assets/icons/atualizar.svg"
 import { ItemService } from "services/itemService";
 import { ActionMode } from "constants";
 
-export default function TodoListItem({ item, index, itemRemovido, onDeleteItem,mode, clickItem, }) {
+export default function TodoListItem({ item, onDeleteItem,mode, clickItem, }) {
 
   const handleDelete = async(item) =>{
     await ItemService.deleteById(item._id);
     onDeleteItem(item);
   }
 
-  const badgeAcrion = (canRender) =>{
-    if (canRender) return (<span className="ItemListaItem__tag">{mode}</span>)
-  }
 
   const attButon = (canRender) =>{
     if (canRender) return (<button onClick={()=> clickItem(item._id)}>
@@ -24,18 +21,16 @@ export default function TodoListItem({ item, index, itemRemovido, onDeleteItem,m
   return (
     
     <div className="TodoListItem" >
-      {badgeAcrion(mode != ActionMode.NORMAL)}
       <div>
         <div className="TodoListItem__titulo">{item.titulo}</div>
         <div className="TodoListItem__horario">{item.horario}</div>
         <div className="TodoListItem__descricao">{item.descricao}</div>
-        <div className="TodoListItem__descricao">{item._id}</div>
         <div className="TodoListItem__acoes">
           <div>
             <input type="checkbox" className="checkbox" />
           </div>
           <div>
-          {attButon(mode != ActionMode.NORMAL)}
+          {attButon(mode !== ActionMode.NORMAL)}
             <button disabled={mode !== ActionMode.NORMAL} onClick={()=> handleDelete(item)}>
               <img  src={del} alt="" />
             </button>
